@@ -1,5 +1,5 @@
 if (process.argv[2]) {
-    const fact = (n) => {
+    const fact = function(n) {
         if (n == 1 || isNaN(n)) {
             return 1
         }
