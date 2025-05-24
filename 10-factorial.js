@@ -1,9 +1,7 @@
-// if (process.argv[2]) {
-    const fact = function(n) {
-        if (n == 1 || isNaN(n) || n == undefined) {
-            return 1
-        }
-        return n * fact(n-1)
+const fact = function(n) {
+    if (n == 1 || isNaN(n) || n == undefined) {
+        return 1
     }
-    console.log(fact(process.argv[2]))
-// }
+    return n * fact(n-1)
+}
+console.log(fact(process.argv[2]))
